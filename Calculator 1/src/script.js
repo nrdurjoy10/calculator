@@ -10,10 +10,16 @@ const calculate = () => {
     let number2 = parseFloat(num2.value);
     let operator = operators.value;
 
+    console.log(number1, number2, operator);
+    
     if (isNaN(number1) || isNaN(number2)) {
         result.value = 'Enter valid numbers';
         return;
     }
+    // if (number1 == null || number2 == null || operator == null) {
+    //     result.value = 'Enter valid numbers';
+    //     return;
+    // }
 
     let output = 0;
     switch (operator) {
@@ -43,7 +49,7 @@ const calculate = () => {
     //     output = number1 / number2;
     // }
 
-    result.value = output;
+    result.value = `${number1} ${operator} ${number2} = ${output}`;
 }
 
 

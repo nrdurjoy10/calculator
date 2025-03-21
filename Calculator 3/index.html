@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator Task</title>
+    <!-- Link Up Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <!-- Link Up Main CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="section">
+        <div class="container">
+            <h1>Calculator Task</h1>
+        <div class="row row-1">
+            <input type="text" id="display" readonly >
+        </div>
+        <div class="row row-2">
+            <button class="btn clear">C</button>
+            <button class="btn green-txt" id="deleteLast">&#9003;</button>
+            <button class="btn green-txt operator"
+            value="%">%</button>
+            <button class="btn green-txt operator"
+            value="/">&#247;</button>  
+            <!--division sign -- &#247; -->
+        </div>
+        <div class="row row-3"> 
+            <button class="btn number" value="7">7</button>
+            <button class="btn number" value="8">8</button>
+            <button class="btn number" value="9">9</button>
+            <button class="btn green-txt operator" value="*">&#215;</button>
+        </div>
+        <div class="row row-4">
+            <button class="btn number" value="4">4</button>
+            <button class="btn number" value="5">5</button>
+            <button class="btn number" value="6">6</button>
+            <button class="btn green-txt operator" value="-">&#8722;</button>
+        </div>
+        <div class="row row-5">
+            <button class="btn number" value="1">1</button>
+            <button class="btn number" value="2">2</button>
+            <button class="btn number" value="3">3</button>
+            <button class="btn green-txt operator" value="+">&#43;</button>
+        </div>
+        <div class="row row-6">
+            <button class="btn" id="ans">Ans</button>
+            <button class="btn number" value="0">0</button>
+            <button class="btn number" value=".">.</button>
+            <button class="btn equal" id="equal">=</button>
+        </div>
+        </div>
+    </section>
+    <script src="./script.js"></script>
+</body>
+</html>
