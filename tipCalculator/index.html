@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator</title>
+    <!-- Tailwind CSS -->
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="./src/style.css">
+</head>
+<body>
+
+    <main class="container mx-auto">
+        
+        <div class="calculator w-1/4 mx-auto p-6 bg-white rounded-lg mt-6
+        flex flex-col gap-3">
+            <h1 class="text-3xl text-center font-bold">Tip Calculator</h1>
+            <div class="calculator__input w-full">
+                <input type="number" class="w-full rounded-lg px-4 py-2 border border-gray-300 focus:outline-none bg-gray-200 focus:bg-white" id="bill" placeholder="Enter Bill Amount">
+            </div>
+            <div class="calculator__input">
+                <input class="w-full rounded-lg px-4 py-2 border border-gray-300 focus:outline-none bg-gray-200 focus:bg-white" type="number" id="tip" placeholder="Enter Tip Percentage(%)">
+            </div>
+            <div class="calculator__input">
+                <input type="number" class="w-full rounded-lg px-4 py-2 border border-gray-300 focus:outline-none bg-gray-200 focus:bg-white" id="people" placeholder="Number of People">
+            </div>
+            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 w-full rounded focus:outline-none" id="calculate">Calculate</button>
+            <button class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 w-full rounded focus:outline-none" id="reset">Reset</button>
+            <div class="calculator__output" id="output">
+                
+            </div>
+    </main>
+    <!-- Link JS -->
+    <script src="./src/script.js"></script>
+</body>
+</html>
+
+
+<!-- <div class="calculator__output__tip">
+    <p>Tip Amount</p>
+    <p id="tipAmount">$0.00</p>
+</div>
+<div class="calculator
+__output__total">
+    <p>Total</p>
+    <p id="total">$0.00</p>
+</div>
+<div class="calculator
+__output__perPerson">
+    <p>Total Per Person</p>
+    <p id="perPerson">$0.00</p>
+</div> -->
